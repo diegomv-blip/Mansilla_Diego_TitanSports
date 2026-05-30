@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TITAN SPORTS | El Portal Global</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&family=Public+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Barra de Resultados (Ticker) -->
+    <div class="result-ticker">
+        <div class="ticker-content">
+            <span class="score-item">⚽ FC ANDROMEDA 3 - 1 REAL MARTE</span>
+            <span class="score-item">🏀 MOON BALLERS 102 - 98 SATURN RINGS</span>
+            <span class="score-item">🏎️ GP NEPTUNO: VERSTAPPEN IV GANA</span>
+            <span class="score-item">🎮 CYBER-OPEN: TEAM LIQUID VENCE</span>
+            <span class="score-item">🎾 OPEN OCEÁNICO: ALCARAZ CLASIFICA</span>
+        </div>
+    </div>
+
+    <header>
+        <nav class="container navbar">
+            <div class="logo">TITAN<span>SPORTS</span></div>
+            <ul class="menu">
+                <li><a href="#" class="active" data-filter="all">Portada</a></li>
+                <li><a href="#" data-filter="Fútbol">Fútbol</a></li>
+                <li><a href="#" data-filter="Motores">Motores</a></li>
+                <li><a href="#" data-filter="E-Sports">E-Sports</a></li>
+                <li><a href="#" data-filter="Extremo">Extremo</a></li>
+            </ul>
+            <div class="nav-extra">
+                <div class="search-bar">
+                    <input type="text" id="mainSearch" placeholder="Buscar atleta, equipo...">
+                </div>
+                <button id="mode-toggle">🌓</button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        
+        <!-- Sección Hero (Noticia Principal) -->
+        <section class="hero-section">
+            <div class="hero-card news-card" data-category="Fútbol" data-title="La Primera Copa del Mundo Interplanetaria" data-img="https://images.unsplash.com/photo-1543351611-58f69d7c1781?auto=format&fit=crop&q=80&w=1000" data-content="La FIFA ha anunciado oficialmente que el Mundial 2042 se jugará en tres planetas: Tierra, Marte y Venus. Los estadios contarán con domos de oxígeno y gravedad artificial para garantizar la equidad competitiva.">
+                <div class="hero-img" style="background-image: url('https://images.unsplash.com/photo-1543351611-58f69d7c1781?auto=format&fit=crop&q=80&w=1000');"></div>
+                <div class="hero-text">
+                    <span class="badge">PRIMICIA MUNDIAL</span>
+                    <h1>Mundial 2042: Sedes en Marte y la Luna confirmadas</h1>
+                    <p>Un hito sin precedentes en la historia del deporte humano.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Grilla de Noticias Secundarias -->
+        <div class="main-layout">
+            <section class="news-grid" id="newsContainer">
+                
+                <!-- Noticia 2 -->
+                <article class="news-card" data-category="Motores" data-title="F1: Motores de Antimateria" data-img="https://images.unsplash.com/photo-1594735297182-47c7245c546a?auto=format&fit=crop&q=80&w=500" data-content="La nueva reglamentación de la FIA permite el uso de micro-motores de antimateria. Los coches ahora pueden acelerar de 0 a 300 km/h en solo 0.5 segundos, desafiando las leyes de la física.">
+                    <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1594735297182-47c7245c546a?auto=format&fit=crop&q=80&w=500');"></div>
+                    <div class="card-content">
+                        <span class="category">Motores</span>
+                        <h3>La Fórmula 1 rompe la barrera del sonido</h3>
+                        <p>Los nuevos motores de antimateria cambian las reglas del juego.</p>
+                    </div>
+                </article>
+
+                <!-- Noticia 3 -->
+                <article class="news-card" data-category="E-Sports" data-title="IA vs Humanos en el Mundial" data-img="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&q=80&w=500" data-content="Por primera vez en la historia de los E-Sports, un equipo compuesto 100% por Inteligencia Artificial ha clasificado a la gran final del mundial de Dota 5. El debate sobre la ética está en su punto máximo.">
+                    <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&q=80&w=500');"></div>
+                    <div class="card-content">
+                        <span class="category">E-Sports</span>
+                        <h3>El equipo IA clasifica a la Gran Final</h3>
+                        <p>¿Es el fin de los pro-players humanos en el gaming?</p>
+                    </div>
+                </article>
+
+                <!-- Noticia 4 -->
+                <article class="news-card" data-category="Extremo" data-title="Surf en Lava en Islandia" data-img="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&q=80&w=500" data-content="Usando tablas de cerámica reforzada, deportistas extremos han logrado surfear los flujos de lava controlados del volcán Fagradalsfjall.">
+                    <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&q=80&w=500');"></div>
+                    <div class="card-content">
+                        <span class="category">Extremo</span>
+                        <h3>Surfeando lava viva: El nuevo deporte viral</h3>
+                        <p>Solo 5 personas en el mundo se atreven a este desafío.</p>
+                    </div>
+                </article>
+
+                <!-- Noticia 5 (Fútbol) -->
+                <article class="news-card" data-category="Fútbol" data-title="Mbappé Jr. firma con el City" data-img="https://images.unsplash.com/photo-1522778119026-d647f0596c20?auto=format&fit=crop&q=80&w=500" data-content="A sus 16 años, el hijo del legendario Kylian Mbappé ha firmado el contrato más caro de la historia para un adolescente. El Real Madrid se quedó fuera de la puja.">
+                    <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1522778119026-d647f0596c20?auto=format&fit=crop&q=80&w=500');"></div>
+                    <div class="card-content">
+                        <span class="category">Fútbol</span>
+                        <h3>El heredero del trono: Mbappé Jr. llega a la Premier</h3>
+                        <p>El mercado de fichajes explota con este nuevo movimiento.</p>
+                    </div>
+                </article>
+
+            </section>
+
+            <!-- Sidebar con contenido extra -->
+            <aside class="sidebar">
+                <div class="sidebar-widget">
+                    <h4>🔥 MÁS VISTO</h4>
+                    <div class="mini-news">
+                        <p>1. ¿Cómo entrenar en gravedad cero?</p>
+                        <hr>
+                        <p>2. Dieta de campeones: Algas lunares</p>
+                        <hr>
+                        <p>3. El retiro de Nadal a los 60 años</p>
+                    </div>
+                </div>
+
+                <div class="sidebar-widget poll">
+                    <h4>🗳️ ENCUESTA</h4>
+                    <p>¿Quién ganará el Balón de Oro Galáctico?</p>
+                    <button class="vote-btn">K. Haaland (Robot)</button>
+                    <button class="vote-btn">Messi X (Clon)</button>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- Modal de Noticia -->
+    <div id="newsModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <img id="modalImg" src="" alt="">
+            <div class="modal-body">
+                <h2 id="modalTitle"></h2>
+                <div id="modalFullContent"></div>
+                <div class="comments-section">
+                    <h3>Comentarios (24)</h3>
+                    <div class="comment"><strong>User99:</strong> ¡Esto es increíble! Ya quiero ir a Marte.</div>
+                    <div class="comment"><strong>SportLover:</strong> No creo que la IA deba competir.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">TITAN<span>SPORTS</span></div>
+            <p>&copy; 2024 - Noticias del Futuro Hoy</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
